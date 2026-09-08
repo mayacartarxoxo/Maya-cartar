@@ -113,3 +113,34 @@ footer {
         font-size: 40px;
     }
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 10%;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+}
